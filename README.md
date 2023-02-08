@@ -15,6 +15,7 @@ https://user-images.githubusercontent.com/100815627/217583281-71f4b7b9-ab79-48a7
 -   Treino de pseudo-classes utilizando Sass
 -   Animações CSS
 -   Construção de sidebars animadas
+-   Commits semânticos
 
 ## 🤝 Feedbacks
 
