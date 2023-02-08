@@ -1,23 +1,17 @@
-const menuVetor = document.querySelector(".menu")
 const optionsMenu = document.querySelectorAll(".menu-nav div")
 const aside = document.querySelector("aside")
 const logoVet = document.querySelector(".logo-vet")
 const spansSidebar = document.querySelectorAll(".menu-nav div span")
-
 const imgAvatar = document.querySelector(".logout img")
 const informationUser = document.querySelector(".information-user")
 
 logoVet.style.display = "none"
-let isSidebarOpen = false;
-
 optionsMenu.forEach((option) => {
-    console.log(option)
     option.addEventListener("click", openSidebar)
 })
 
 function openSidebar() {
     aside.style.width = aside.style.width === "250px" ? "78px" : "250px"
-    isSidebarOpen = !isSidebarOpen
     
     logoVet.style.display = logoVet.style.display === "none" ? "block" : 'none'
     spansSidebar.forEach(span => {
