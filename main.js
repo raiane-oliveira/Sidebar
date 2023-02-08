@@ -9,7 +9,6 @@ const informationUser = document.querySelector(".information-user")
 
 logoVet.style.display = "none"
 let isSidebarOpen = false;
-// menuVetor.addEventListener("click", openSidebar)
 
 optionsMenu.forEach((option) => {
     console.log(option)
