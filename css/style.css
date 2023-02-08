@@ -4,12 +4,8 @@ aside .menu-logo, aside {
 }
 
 @keyframes openSidebarAnimation {
-  50% {
-    opacity: 0.5;
-  }
   100% {
     display: none;
-    width: 0px;
     opacity: 0;
   }
 }
@@ -34,7 +30,7 @@ html {
 }
 
 .invisible {
-  animation: openSidebarAnimation forwards 500ms alternate;
+  animation: openSidebarAnimation forwards 500ms;
 }
 
 aside {
@@ -44,7 +40,7 @@ aside {
   transition: width 500ms;
 }
 aside .img-vetor {
-  width: 24px;
+  height: 24px;
 }
 aside .menu-nav {
   display: flex;
@@ -54,34 +50,41 @@ aside .menu-nav {
 }
 aside .menu-nav div {
   overflow: hidden;
-  padding: 0.7rem 0.8rem;
+  padding: 0.7rem;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  cursor: pointer;
+}
+aside .menu-nav div img + span {
+  padding-left: 0.8rem;
 }
 aside .menu {
   cursor: pointer;
 }
 aside .logout {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 60px;
-  padding: 0.8rem;
+  padding: 0.8rem 0;
   background-color: rgba(220, 228, 227, 0.6);
+  overflow: hidden;
+}
+aside .logout .img-avatar.invisible,
+aside .logout .information-user.invisible {
+  display: none;
 }
 aside .logout .information-user {
-  align-items: center;
-  gap: 0.5rem;
+  overflow: hidden;
   color: #084236;
-  transition: all 500ms;
+  padding: 0 2.5rem 0 0.7rem;
 }
 aside .logout .information-user p:first-child {
   font-size: 0.9rem;
   line-height: 1;
 }
-aside .logout .information-user .cargo-user {
+aside .logout .information-user p:nth-child(2) {
   font-size: 0.75rem;
 }
 

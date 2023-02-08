@@ -4,13 +4,8 @@
 }
 
 @keyframes openSidebarAnimation {
-    50% {
-        opacity: .5;
-    }
-
     100% {
         display: none;
-        width: 0px;
         opacity: 0;
     }
 }
@@ -36,7 +31,7 @@ html {
 }
 
 .invisible {
-    animation: openSidebarAnimation forwards 500ms alternate;
+    animation: openSidebarAnimation forwards 500ms;
 }
 
 aside {
@@ -47,7 +42,7 @@ aside {
     transition: width 500ms;
     
     .img-vetor {
-        width: 24px;
+        height: 24px;
     }
     
     .menu-nav {
@@ -55,13 +50,17 @@ aside {
         flex-direction: column;
         padding: 1rem;
         gap: 1rem;
-        
+
         div {
             overflow: hidden;
-            padding: .7rem .8rem;
+            padding: .7rem;
             display: flex;
             align-items: center;
-            gap: .8rem;
+            cursor: pointer;
+
+            img + span {
+                padding-left: .8rem;
+            }
         }
     }
 
@@ -75,25 +74,31 @@ aside {
 
     .logout {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: center;
+        
         width: 100%;
         height: 60px;
-        padding: .8rem;
+        padding: .8rem 0;
         background-color: rgba($color: #DCE4E3, $alpha: 0.6);
+        overflow: hidden;
+
+        .img-avatar.invisible,
+        .information-user.invisible {
+            display: none;
+        }
 
         .information-user {
-            align-items: center;
-            gap: .5rem;
+            overflow: hidden;
             color: #084236;
-            transition: all 500ms;
+            padding: 0 2.5rem 0 .7rem;
 
             p:first-child {
                 font-size: .9rem;
                 line-height: 1;
             }
 
-            .cargo-user {
+            p:nth-child(2) {
                 font-size: .75rem;
             }
         }
