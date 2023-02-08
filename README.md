@@ -18,4 +18,5 @@ https://user-images.githubusercontent.com/100815627/217583281-71f4b7b9-ab79-48a7
 
 ## 🤝 Feedbacks
 
-
+Se você tiver opiniões em como eu posso melhorar essa aplicação, por favor, me mande uma mensagem pelo [Linkedin](https://linkedin.com/in/raiane-oliveira-dev) ou um <a href="mailto:raiane.oliveira404@gmail.com">e-mail</a>.<br>
+Eu ficarei feliz de responder e aprender mais com você! ;) ❤️
